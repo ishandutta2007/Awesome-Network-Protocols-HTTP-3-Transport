@@ -74,7 +74,7 @@ This curated registry showcases premier open-source libraries, runtimes, web ser
 
 Battle-tested network transport protocol libraries implementing packet parsing, connection multiplexing, congestion control (BBR, CUBIC), and frame encryption:
 
-| 🏷️ Repository | 🌟 Stars | 💻 Language | 📖 Description & Capabilities |
+| 🏷️ Repository | 🌟 GitHub_Stars | 💻 Language | 📖 Description & Capabilities |
 | :--- | :---: | :---: | :--- |
 | **[cloudflare/quiche](https://github.com/cloudflare/quiche)** | [![Stars](https://img.shields.io/github/stars/cloudflare/quiche?style=social&color=white)](https://github.com/cloudflare/quiche/stargazers) | Rust / C | Savoury open-source Rust implementation of QUIC and HTTP/3 by Cloudflare; includes C/C++ FFI bindings, QPACK compression, and connection migration support. |
 | **[quic-go/quic-go](https://github.com/quic-go/quic-go)** | [![Stars](https://img.shields.io/github/stars/quic-go/quic-go?style=social&color=white)](https://github.com/quic-go/quic-go/stargazers) | Go | The definitive pure-Go implementation of the QUIC transport protocol and HTTP/3 client/server; powers Caddy, Traefik, and Cloudflared tunnels. |
@@ -102,7 +102,7 @@ Battle-tested network transport protocol libraries implementing packet parsing, 
 
 High-performance reverse proxies, web servers, and client utilities terminating production QUIC and HTTP/3:
 
-| 🏷️ Server / Proxy | 🌟 Stars | 💻 Language | 📖 Architecture & HTTP/3 Integration |
+| 🏷️ Server / Proxy | 🌟 GitHub_Stars | 💻 Language | 📖 Architecture & HTTP/3 Integration |
 | :--- | :---: | :---: | :--- |
 | **[caddyserver/caddy](https://github.com/caddyserver/caddy)** | [![Stars](https://img.shields.io/github/stars/caddyserver/caddy?style=social&color=white)](https://github.com/caddyserver/caddy/stargazers) | Go | Modern enterprise web server with automatic TLS certificate provisioning and out-of-the-box HTTP/3 termination powered by `quic-go`. |
 | **[curl/curl](https://github.com/curl/curl)** | [![Stars](https://img.shields.io/github/stars/curl/curl?style=social&color=white)](https://github.com/curl/curl/stargazers) | C | The world's primary CLI data transfer utility and library supporting HTTP/3 requests via `ngtcp2`, `quiche`, and `msquic` backends. |
@@ -118,7 +118,7 @@ High-performance reverse proxies, web servers, and client utilities terminating 
 
 Diagnostic, inspection, and visualization utilities for debugging QUIC streams, encrypted handshakes, and transport performance:
 
-| 🏷️ Diagnostic Tool | 🌟 Stars | 💻 Ecosystem | 📖 Core Diagnostic Capability |
+| 🏷️ Diagnostic Tool | 🌟 GitHub_Stars | 💻 Ecosystem | 📖 Core Diagnostic Capability |
 | :--- | :---: | :---: | :--- |
 | **[wireshark/wireshark](https://github.com/wireshark/wireshark)** | [![Stars](https://img.shields.io/github/stars/wireshark/wireshark?style=social&color=white)](https://github.com/wireshark/wireshark/stargazers) | C / C++ | Industry-standard packet analyzer featuring full QUIC, HTTP/3, and QPACK dissectors with TLS `SSLKEYLOGFILE` decryption. |
 | **[quiclog/qvis](https://github.com/quiclog/qvis)** | [![Stars](https://img.shields.io/github/stars/quiclog/qvis?style=social&color=white)](https://github.com/quiclog/qvis/stargazers) | TypeScript | Interactive browser visualization tool for QUIC and HTTP/3 event traces; visualizes packet drops, congestion windows, and multiplexing flows. |
@@ -146,7 +146,7 @@ We welcome additions, benchmarks, and updates to both SaaS products and open-sou
 
 1. 🍴 **Fork** this repository.
 2. 🌿 **Create a branch**: `git checkout -b feature/new-protocol-tool`.
-3. ✏️ **Edit `README.md`**: Follow existing table schema, ensure star badges link to stargazers, verify pricing/free-tier specifics, and keep company valuations updated.
+3. ✏️ **Edit `README.md`**: Follow existing table schema, ensure Stars_Badges link to stargazers, verify pricing/free-tier specifics, and keep company valuations updated.
 4. 🚀 **Commit & Push**: `git commit -m "Add new HTTP/3 implementation" && git push origin feature/new-protocol-tool`.
 5. 📬 **Submit a Pull Request** with a concise description of why the tool belongs in this awesome list.
 
