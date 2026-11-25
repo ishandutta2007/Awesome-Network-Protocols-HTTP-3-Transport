@@ -1,0 +1,172 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 360" width="100%" height="360" style="background:#0a0f1d; font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;">
+  <defs>
+    <!-- Background Gradient -->
+    <linearGradient id="bg-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#070b16"/>
+      <stop offset="50%" stop-color="#0f172a"/>
+      <stop offset="100%" stop-color="#0a1026"/>
+    </linearGradient>
+
+    <!-- Accent Gradients -->
+    <linearGradient id="cyan-blue" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#00f2fe"/>
+      <stop offset="100%" stop-color="#4facfe"/>
+    </linearGradient>
+    <linearGradient id="purple-pink" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#f857a6"/>
+      <stop offset="100%" stop-color="#ff5858"/>
+    </linearGradient>
+    <linearGradient id="green-glow" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#10b981"/>
+      <stop offset="100%" stop-color="#06b6d4"/>
+    </linearGradient>
+
+    <!-- Glow Filter -->
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="6" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+
+    <!-- Subtle Grid Pattern -->
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="rgba(255, 255, 255, 0.04)" stroke-width="1"/>
+    </pattern>
+  </defs>
+
+  <style>
+    .packet-stream {
+      stroke-dasharray: 12 180;
+      animation: flowStream 3.5s linear infinite;
+    }
+    .packet-stream-fast {
+      stroke-dasharray: 8 120;
+      animation: flowStream 2.2s linear infinite;
+    }
+    .packet-stream-reverse {
+      stroke-dasharray: 10 140;
+      animation: flowStreamRev 4s linear infinite;
+    }
+    @keyframes flowStream {
+      from { stroke-dashoffset: 384; }
+      to { stroke-dashoffset: 0; }
+    }
+    @keyframes flowStreamRev {
+      from { stroke-dashoffset: -384; }
+      to { stroke-dashoffset: 0; }
+    }
+    .pulse-node {
+      animation: pulseGlow 2.5s ease-in-out infinite alternate;
+    }
+    @keyframes pulseGlow {
+      0% { r: 4px; opacity: 0.5; }
+      100% { r: 7px; opacity: 1; }
+    }
+    .floating-card {
+      animation: floatMotion 4s ease-in-out infinite alternate;
+    }
+    @keyframes floatMotion {
+      0% { transform: translateY(0px); }
+      100% { transform: translateY(-7px); }
+    }
+    .floating-card-alt {
+      animation: floatMotionAlt 4.5s ease-in-out infinite alternate;
+    }
+    @keyframes floatMotionAlt {
+      0% { transform: translateY(0px); }
+      100% { transform: translateY(7px); }
+    }
+  </style>
+
+  <!-- Background Base -->
+  <rect width="100%" height="100%" fill="url(#bg-grad)" />
+  <rect width="100%" height="100%" fill="url(#grid)" />
+
+  <!-- Dynamic Network Connection Tracks (Behind Content) -->
+  <g opacity="0.35">
+    <path d="M -50,60 Q 300,120 600,40 T 1250,90" fill="none" stroke="#38bdf8" stroke-width="2" />
+    <path d="M -50,60 Q 300,120 600,40 T 1250,90" fill="none" stroke="#38bdf8" stroke-width="3" class="packet-stream" filter="url(#glow)"/>
+
+    <path d="M -50,300 Q 350,220 700,310 T 1250,240" fill="none" stroke="#a855f7" stroke-width="2" />
+    <path d="M -50,300 Q 350,220 700,310 T 1250,240" fill="none" stroke="#c084fc" stroke-width="3" class="packet-stream-reverse" filter="url(#glow)"/>
+
+    <path d="M 100,-20 Q 250,180 500,200 T 1100,380" fill="none" stroke="#10b981" stroke-width="1.5" stroke-dasharray="4 6"/>
+    <path d="M 100,-20 Q 250,180 500,200 T 1100,380" fill="none" stroke="#34d399" stroke-width="2.5" class="packet-stream-fast" filter="url(#glow)"/>
+  </g>
+
+  <!-- Dynamic Constellation Nodes -->
+  <g>
+    <circle cx="210" cy="85" r="5" fill="#38bdf8" class="pulse-node" />
+    <circle cx="560" cy="45" r="5" fill="#00f2fe" class="pulse-node" style="animation-delay: 0.8s;" />
+    <circle cx="980" cy="75" r="6" fill="#818cf8" class="pulse-node" style="animation-delay: 1.4s;" />
+    <circle cx="280" cy="275" r="5" fill="#c084fc" class="pulse-node" style="animation-delay: 0.5s;" />
+    <circle cx="780" cy="290" r="5" fill="#34d399" class="pulse-node" style="animation-delay: 1.8s;" />
+  </g>
+
+  <!-- Ambient Dynamic Floating Badges in safe corners -->
+  <g class="floating-card" transform="translate(970, 40)" opacity="0.85">
+    <rect width="180" height="38" rx="8" fill="#1e293b" stroke="rgba(56, 189, 248, 0.4)" stroke-width="1.2" />
+    <circle cx="20" cy="19" r="6" fill="#10b981" />
+    <text x="35" y="24" fill="#94a3b8" font-size="12" font-weight="600">RFC 9000 • QUIC</text>
+  </g>
+  <g class="floating-card-alt" transform="translate(950, 95)" opacity="0.85">
+    <rect width="200" height="38" rx="8" fill="#1e293b" stroke="rgba(192, 132, 252, 0.4)" stroke-width="1.2" />
+    <circle cx="20" cy="19" r="6" fill="#38bdf8" />
+    <text x="35" y="24" fill="#94a3b8" font-size="12" font-weight="600">RFC 9114 • HTTP/3</text>
+  </g>
+  <g class="floating-card" transform="translate(965, 275)" opacity="0.85">
+    <rect width="185" height="38" rx="8" fill="#1e293b" stroke="rgba(52, 211, 153, 0.4)" stroke-width="1.2" />
+    <circle cx="20" cy="19" r="6" fill="#f59e0b" />
+    <text x="35" y="24" fill="#94a3b8" font-size="12" font-weight="600">0-RTT Transport</text>
+  </g>
+
+  <!-- Central High-Contrast Foreground Typography -->
+  <!-- Top Category Pill -->
+  <g transform="translate(100, 52)">
+    <rect width="365" height="28" rx="14" fill="rgba(56, 189, 248, 0.12)" stroke="rgba(56, 189, 248, 0.45)" stroke-width="1"/>
+    <text x="14" y="19" fill="#38bdf8" font-size="11.5" font-weight="700" letter-spacing="1.5">⚡ NEXT-GEN UDP &amp; TRANSPORT PROTOCOLS</text>
+  </g>
+
+  <!-- Main Title -->
+  <g transform="translate(100, 135)">
+    <text fill="#ffffff" font-size="44" font-weight="800" letter-spacing="-0.5">
+      Awesome <tspan fill="url(#cyan-blue)">HTTP/3</tspan> &amp; <tspan fill="url(#green-glow)">QUIC</tspan>
+    </text>
+  </g>
+
+  <!-- Subtitle -->
+  <g transform="translate(100, 178)">
+    <text fill="#94a3b8" font-size="18" font-weight="400">
+      Curated Ecosystem of Modern Transport Protocols, Edge CDNs &amp; Low-Latency Stacks
+    </text>
+  </g>
+
+  <!-- Feature Pills / Highlights -->
+  <g transform="translate(100, 230)">
+    <!-- Pill 1 -->
+    <rect x="0" y="0" width="135" height="34" rx="7" fill="rgba(255, 255, 255, 0.05)" stroke="rgba(255, 255, 255, 0.15)" stroke-width="1"/>
+    <text x="16" y="22" fill="#e2e8f0" font-size="13" font-weight="600">🚀 HTTP/3 &amp; QUIC</text>
+
+    <!-- Pill 2 -->
+    <rect x="150" y="0" width="150" height="34" rx="7" fill="rgba(255, 255, 255, 0.05)" stroke="rgba(255, 255, 255, 0.15)" stroke-width="1"/>
+    <text x="166" y="22" fill="#e2e8f0" font-size="13" font-weight="600">🌐 WebTransport</text>
+
+    <!-- Pill 3 -->
+    <rect x="315" y="0" width="165" height="34" rx="7" fill="rgba(255, 255, 255, 0.05)" stroke="rgba(255, 255, 255, 0.15)" stroke-width="1"/>
+    <text x="331" y="22" fill="#e2e8f0" font-size="13" font-weight="600">📦 QPACK Compression</text>
+
+    <!-- Pill 4 -->
+    <rect x="495" y="0" width="155" height="34" rx="7" fill="rgba(255, 255, 255, 0.05)" stroke="rgba(255, 255, 255, 0.15)" stroke-width="1"/>
+    <text x="511" y="22" fill="#e2e8f0" font-size="13" font-weight="600">🛡️ MASQUE Proxy</text>
+
+    <!-- Pill 5 -->
+    <rect x="665" y="0" width="150" height="34" rx="7" fill="rgba(255, 255, 255, 0.05)" stroke="rgba(255, 255, 255, 0.15)" stroke-width="1"/>
+    <text x="681" y="22" fill="#e2e8f0" font-size="13" font-weight="600">⚡ 0-RTT Latency</text>
+  </g>
+
+  <!-- Bottom Stats bar -->
+  <g transform="translate(100, 310)">
+    <text fill="#64748b" font-size="12" font-weight="500">
+      Comprehensive Directory • 10+ Enterprise SaaS Edge Platforms • 20+ Production Open-Source Implementations
+    </text>
+  </g>
+</svg>
