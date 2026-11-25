@@ -4,10 +4,12 @@
 
 # ⚡ Awesome Network Protocols & HTTP/3 Transport Ecosystem
 
-[![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
+<a href="https://github.com/ishandutta2007/Awesome-Awesome-Awesome"><img src="https://img.shields.io/badge/Awesome-%E2%9C%94-blueviolet?style=flat-square&logo=github" alt="Awesome"/></a><a href="https://discord.gg/jc4xtF58Ve"><img src="https://img.shields.io/badge/Discord-5865F2?style=for-the-badge&logo=discord&logoColor=white" alt="Discord" /></a>
+[![Awesome](https://awesome.re/badge.svg)](https://github.com/ishandutta2007/Awesome-Awesome-Awesome)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](https://github.com/ishandutta2007/Awesome-Network-Protocols-HTTP-3-Transport/pulls)
 [![Tracked Protocols](https://img.shields.io/badge/Protocols-QUIC%20%7C%20HTTP%2F3%20%7C%20WebTransport-blue)](https://en.wikipedia.org/wiki/HTTP/3)
+<a href="https://github.com/ishandutta2007"><img alt="GitHub followers" src="https://img.shields.io/github/followers/ishandutta2007?label=Follow" /></a>
 
 **Curated directory of enterprise SaaS edge delivery networks, hyperscale cloud CDNs, and battle-tested open-source implementations for next-generation network protocols.**
 
@@ -29,6 +31,8 @@
   - [🔍 Protocol Tooling, Telemetry & Network Diagnostics](#-protocol-tooling-telemetry--network-diagnostics)
 - [🏗️ Architectural Guidelines & Custom Implementations](#️-architectural-guidelines--custom-implementations)
 - [🤝 How to Contribute](#-how-to-contribute)
+- [💖 Support](#-support)
+- [📈 Star History](#-star-history)
 - [⚠️ Security & Operational Disclaimer](#️-security--operational-disclaimer)
 
 ---
@@ -147,6 +151,24 @@ We welcome additions, benchmarks, and updates to both SaaS products and open-sou
 5. 📬 **Submit a Pull Request** with a concise description of why the tool belongs in this awesome list.
 
 ⭐ **Star the repo** if you find it helpful for your network protocol and systems engineering work!
+
+---
+
+## 💖 Support
+
+If you find this repository helpful, consider supporting its maintenance and continued research:
+
+- ⭐ **Star & Fork**: Give this repository a star and fork it to contribute.
+- 🗣️ **Share**: Share it with fellow network protocol engineers, systems programmers, and low-latency developers.
+- ☕ **Buy a Coffee / Sponsor**: Support ongoing updates via the [GitHub Sponsors Dashboard](https://github.com/sponsors/ishandutta2007).
+
+[![Sponsor ishandutta2007](https://img.shields.io/badge/Sponsor-%E2%9D%A4-pink?style=for-the-badge&logo=github-sponsors)](https://github.com/sponsors/ishandutta2007)
+
+---
+
+##  Star History
+[![Star History Chart](https://star-history.dera.page/svg?repos=ishandutta2007/Awesome-Network-Protocols-HTTP-3-Transport&type=date&legend=top-left)](https://star-history.dera.page/#ishandutta2007/Awesome-Network-Protocols-HTTP-3-Transport&type=date&legend=top-left)
+[![Star History Chart](https://www.star-history.com/svg?repos=ishandutta2007/Awesome-Network-Protocols-HTTP-3-Transport&type=date&legend=top-left)](https://www.star-history.com/#ishandutta2007/Awesome-Network-Protocols-HTTP-3-Transport&type=date&legend=top-left)
 
 ---
 
